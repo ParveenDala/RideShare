@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_250"
+        android:rotationY="180"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_city" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.75"
+        android:background="@color/colorPrimary" />
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/dimens_8"
+        android:layout_marginTop="@dimen/dimens_8"
+        android:layout_marginRight="@dimen/dimens_8"
+        android:layout_marginBottom="@dimen/dimens_32"
+        android:orientation="vertical"></LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_layout"
+        android:layout_marginLeft="@dimen/dimens_8"
+        android:layout_marginRight="-25dp"
+        android:layout_marginBottom="-25dp"
+        app:cardCornerRadius="@dimen/dimens_25"
+        app:cardElevation="@dimen/dimens_4"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimens_25"
+            android:layout_marginBottom="@dimen/dimens_25">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/dimens_48"
+                android:layout_height="@dimen/dimens_48"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dimens_8"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/dimens_48"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_above="@id/map_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:layout_marginBottom="-24dp"
+        android:onClick="onNextBtnClicked"
+        android:padding="@dimen/dimens_0"
+        android:src="@drawable/svg_next"
+        app:backgroundTint="@color/colorWhite"
+        app:elevation="@dimen/dimens_8"
+        app:fabCustomSize="@dimen/dimens_48"
+        app:rippleColor="@color/colorPrimaryDark" />
+</RelativeLayout>

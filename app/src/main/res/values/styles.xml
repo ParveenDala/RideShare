@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="address_card_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">@dimen/dimens_8</item>
+        <item name="cardCornerRadius">@dimen/dimens_4</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardElevation">@dimen/dimens_4</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="contentPaddingBottom">@dimen/dimens_14</item>
+        <item name="contentPaddingLeft">@dimen/dimens_8</item>
+        <item name="contentPaddingRight">@dimen/dimens_8</item>
+        <item name="contentPaddingTop">@dimen/dimens_14</item>
+    </style>
+
+    <style name="address_title_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/colorWhite_192</item>
+        <item name="android:textSize">@dimen/dimens_12sp</item>
+    </style>
+
+    <style name="address_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/colorWhite_240</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_marginTop">@dimen/dimens_3</item>
+    </style>
+
+    <style name="top_bar_title_style" parent="address_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/colorWhite_trans_50</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+        <item name="android:padding">@dimen/dimens_2</item>
+    </style>
+
+    <style name="top_bar_text_style" parent="address_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:padding">@dimen/dimens_2</item>
+        <item name="android:layout_marginTop">@dimen/dimens_0</item>
+    </style>
+
+
+    <style name="distance_layout_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_4</item>
+        <item name="android:layout_marginRight">@dimen/dimens_4</item>
+        <item name="android:layout_width">@dimen/dimens_0</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="distance_title_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/dimens_14sp</item>
+        <item name="android:textColor">@color/colorWhite_trans_50</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="distance_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/dimens_15sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dimens_4</item>
+    </style>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingLeft="@dimen/dimens_8"
+    android:paddingRight="@dimen/dimens_8">
+
+    <ImageView
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dimens_48"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Exit"
+        android:onClick="onLeftBtnClicked"
+        android:padding="@dimen/dimens_12"
+        android:rotationY="180"
+        android:src="@drawable/svg_exit" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/create_ride"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimens_20sp" />
+
+    <ImageView
+        android:id="@+id/btn_right"
+        android:layout_width="@dimen/dimens_48"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Reset"
+        android:onClick="onRightBtnClicked"
+        android:padding="@dimen/dimens_12"
+        android:src="@drawable/svg_reset" />
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/address_card_style"
+        app:contentPaddingBottom="@dimen/dimens_0"
+        app:contentPaddingLeft="@dimen/dimens_0"
+        app:contentPaddingRight="@dimen/dimens_0"
+        app:contentPaddingTop="@dimen/dimens_0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_35"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimens_16"
+                android:paddingRight="@dimen/dimens_80">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimens_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+
+                    <TextView
+                        android:id="@+id/ride_title"
+                        style="@style/top_bar_title_style"
+                        android:text="Ride: " />
+
+                    <TextView
+                        android:id="@+id/ride"
+                        style="@style/top_bar_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="@dimen/dimens_0"
+                        android:layout_toRightOf="@+id/ride_title"
+                        android:text="#1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimens_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6">
+
+                    <TextView
+                        android:id="@+id/distance_title"
+                        style="@style/top_bar_title_style"
+                        android:text="Distance: " />
+
+                    <TextView
+                        android:id="@+id/distance"
+                        style="@style/top_bar_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="@dimen/dimens_0"
+                        android:layout_toRightOf="@+id/distance_title"
+                        android:text="25 km" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="@dimen/dimens_35"
+                android:layout_height="@dimen/dimens_35"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:alpha="0.8"
+                android:padding="@dimen/dimens_8"
+                android:src="@drawable/svg_delete" />
+
+            <View
+                android:id="@+id/top_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_0.5"
+                android:layout_below="@+id/btn_delete"
+                android:background="@color/colorCAC7C7" />
+
+            <include
+                layout="@layout/input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_divider"
+                android:layout_marginLeft="@dimen/dimens_8"
+                android:layout_marginTop="@dimen/dimens_10"
+                android:layout_marginRight="@dimen/dimens_8"
+                android:layout_marginBottom="@dimen/dimens_12" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

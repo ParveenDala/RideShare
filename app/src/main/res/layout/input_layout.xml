@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="@dimen/dimens_50"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/right_layout"
+        android:layout_alignBottom="@+id/right_layout"
+        android:layout_marginTop="@dimen/dimens_15"
+        android:layout_marginRight="@dimen/dimens_8"
+        android:layout_marginBottom="@dimen/dimens_12">
+
+        <View
+            android:id="@+id/green_dot"
+            android:layout_width="@dimen/dimens_14"
+            android:layout_height="@dimen/dimens_14"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_round_green" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/dimens_1"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/red_dot"
+            android:layout_below="@+id/green_dot"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorCAC7C7" />
+
+        <View
+            android:id="@+id/red_dot"
+            android:layout_width="@dimen/dimens_14"
+            android:layout_height="@dimen/dimens_14"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_round_red" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/left_layout">
+
+        <TextView
+            android:id="@+id/origin_title"
+            style="@style/address_title_style"
+            android:text="@string/home_address" />
+
+        <TextView
+            android:id="@+id/origin"
+            style="@style/address_text_style"
+            android:layout_below="@+id/origin_title"
+            android:paddingBottom="@dimen/dimens_14"
+            android:text="#1234, Vikash Nagar, Bhiwani, Haryana - 127021" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_0.5"
+            android:layout_below="@+id/origin"
+            android:background="@color/colorCAC7C7" />
+
+        <TextView
+            android:id="@+id/destination_title"
+            style="@style/address_title_style"
+            android:layout_below="@+id/divider"
+            android:paddingTop="@dimen/dimens_12"
+            android:text="@string/office_address" />
+
+        <TextView
+            android:id="@+id/destination"
+            style="@style/address_text_style"
+            android:layout_below="@+id/destination_title"
+            android:text="#4567, Hansi Gate, Bhiwani, Haryana - 127021"
+            android:textSize="@dimen/dimens_14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

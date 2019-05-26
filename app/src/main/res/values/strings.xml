@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RideShare</string>
+
+    <string name="create_ride">Create Ride</string>
+    <string name="driver_ride">Driver Ride</string>
+    <string name="passenger_ride">Passenger Ride</string>
+    <string name="final_route">Final Route</string>
+    <string name="accept_ride_text">Congratulations!  You can accept this ride.</string>
+    <string name="reject_ride_text">Oops!  You can\'t accept this ride.</string>
+    <string name="wait_ride_text">Please wait, finding best possible route....</string>
+
+    <string name="default_distance">00</string>
+    <string name="initial_distance">Initial (km/s)</string>
+    <string name="combined_distance">Combined (km/s)</string>
+    <string name="difference">Difference (km/s)</string>
+
+
+    <string name="default_address">- - - - -</string>
+    <string name="home_address">Home Address</string>
+    <string name="office_address">Office Address</string>
+    <string name="passenger_address">Passenger Address</string>
+    <string name="passenger_home_address">Passenger Home Address</string>
+    <string name="passenger_office_address">Passenger Office Address</string>
+    <string name="tap_to_create_passenger_ride">Tap \'->\' to create Passenger Ride</string>
+    <string name="tap_to_check_final_route">Tap \'->\' to check final route</string>
+    <string name="tap_to_start_again">Tap \'@\' to start again</string>
+    <string name="select_home_address">Select home address from map</string>
+    <string name="select_office_address">Select office address from map</string>
+
+
+    <string name="error_something_went_wrong">Something went wrong while finding route, Please try again</string>
+    <string name="error_unable_to_find_route">Unable to find route between given points, Please try again</string>
+    <string name="error_internet_connection">Please check your network connection and try again</string>
+    <string name="tap_again_to_exit">Please click BACK again to exit</string>
+</resources>

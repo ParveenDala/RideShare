@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dimens_48"
+        android:layout_height="@dimen/dimens_48"
+        android:layout_marginLeft="@dimen/dimens_16"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:layout_marginBottom="@dimen/dimens_25"
+        android:background="@drawable/shape_round_transparent"
+        android:padding="@dimen/dimens_12"
+        android:src="@drawable/svg_cached" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_marginRight="@dimen/dimens_16"
+        android:layout_toRightOf="@+id/icon"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
+        android:text="@string/wait_ride_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/dimens_18sp" />
+
+    <LinearLayout
+        android:id="@+id/stats_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:orientation="horizontal">
+
+        <RelativeLayout style="@style/distance_layout_style">
+
+            <TextView
+                android:id="@+id/initial_distance"
+                style="@style/distance_text_style"
+                android:text="@string/default_distance" />
+
+            <TextView
+                android:id="@+id/initial_distance_title"
+                style="@style/distance_title_style"
+                android:layout_below="@+id/initial_distance"
+                android:text="@string/initial_distance" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/distance_layout_style">
+
+            <TextView
+                android:id="@+id/combined_distance"
+                style="@style/distance_text_style"
+                android:text="@string/default_distance" />
+
+            <TextView
+                android:id="@+id/combined_distance_title"
+                style="@style/distance_title_style"
+                android:layout_below="@+id/combined_distance"
+                android:text="@string/combined_distance" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/distance_layout_style">
+
+            <TextView
+                android:id="@+id/difference"
+                style="@style/distance_text_style"
+                android:text="@string/default_distance" />
+
+            <TextView
+                android:id="@+id/difference_title"
+                style="@style/distance_title_style"
+                android:layout_below="@+id/difference"
+                android:text="@string/difference" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
